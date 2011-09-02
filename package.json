@@ -15,7 +15,8 @@
 , "licenses"      : ["MIT"]
 , "dependencies"  : {
 	"coffee-script" : ">=1.0.1",
-	"jsdom"         : ">=0.2.4"
+	"jsdom"         : ">=0.2.4",
+	"underscore"    : ">=1.1.7"
 }
 , "bin"           : "bin/jasmine-node"
 , "main"          : "./lib/jasmine-node-dom/index.js"
