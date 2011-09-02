@@ -1,22 +1,22 @@
 {
-  "name"          : "jasmine-node"
-, "version"       : "1.0.6"
-, "description"   : "DOM-less simple JavaScript BDD testing framework for Node"
+  "name"          : "jasmine-dom"
+, "version"       : "0.1"
+, "description"   : "DOM-full simple JavaScript BDD testing framework for Node"
 , "homepage"      : [ "http://pivotal.github.com/jasmine"
-                    , "https://github.com/mhevery/jasmine-node"]
-, "repository"    : { "type" : "git"
-                    , "url"  : "https://github.com/mhevery/jasmine-node.git"
+                    , "https://github.com/mhevery/jasmine-node-dom"]
+, "repository"    : {
+	"type" : "git",
+	"url"  : "https://github.com/vandyke/jasmine-node-dom.git"
                     }
 , "keywords"      : ["testing", "bdd"]
-, "author"        : "Misko Hevery <misko@hevery.com>"
-, "contributors"  : [ "Rajan Agaskar <rajan@pivotallabs.com"
-                    , "Christian Williams <xian@pivotallabs.com"
-                    , "Davis W. Frank <dwfrank@pivotallabs.com>"
-                    , "Matteo Collina <matteo.collina@gmail.com>"
-                    ]
-, "maintainers"   : "Martin Häger <martin.haeger@gmail.com>"
+, "author"        : "James Van Dyke <jvandyke@icontact.com>"
+, "contributors"  : []
+, "maintainers"   : "James Van Dyke <jvandyke@icontact.com>"
 , "licenses"      : ["MIT"]
-, "dependencies"  : { "coffee-script" : ">=1.0.1"}
+, "dependencies"  : {
+	"coffee-script" : ">=1.0.1",
+	"jsdom"         : ">=0.2.4"
+}
 , "bin"           : "bin/jasmine-node"
-, "main"          : "lib/jasmine-node"
+, "main"          : "./lib/jasmine-node-dom/index.js"
 }
